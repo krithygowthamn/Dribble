@@ -1,5 +1,5 @@
 # Project Responsive Web Design using Bootstrap
-## Date:
+## Date:23-05-2025
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -26,9 +26,164 @@ Create a HTML file and include the needed Bootstrap components.
 Publish the website in the LocalHost.
 
 ## PROGRAM :
+```
+HTML
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble Clone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Pacifico', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url('your-image-url.jpg'); 
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            color: #2c3e50; 
+        }
+        .gallery-item {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Dribbble</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Shots</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Designers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+                <li class="nav-item"><a class="btn btn-primary" href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container mt-4">
+        <div class="text-center mb-4 header-section">
+            <h3>What are you working on?
+                Gowtham N (212222220013)
+            </h3>
+            <p class="lead">Dribbble is show and tell for designers.</p>
+        </div>
+
+        
+        <div class="row gallery-section">
+            
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="creamy cookies.png" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">cream cookies</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="leaf cookies.png" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Leaf Cookies</p>
+                
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="choco cookies.png" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Choco cookies</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="jam cookies.png" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Jam Cookies</p>
+                        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="round cookies.png" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title"></p>
+                        <small class="text-muted">Round cookies</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="cheese cookies.png" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Cheese cookies</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="moon cookies.png" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Moon cookies</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="blue cookies.png" class="card-img-top gallery-img" alt="Design Thumbnail">
+                    <div class="card-body text-center">
+                        <p class="card-title">Blue cookies</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© Dribbble Gowtham N [212222220013]. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/2eac70f8-c2bb-4db4-bf0b-3358dc862ed7)
 
 
 ## RESULT:
